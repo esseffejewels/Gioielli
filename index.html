@@ -6,67 +6,164 @@
     <title>Esseffe Jewels - Argento & Design</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Icone FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <!-- Logo Immagine -->
         <img src="IMG_2768.jpeg" alt="Esseffe Jewels Logo" class="logo-img">
         <div class="logo-text">ESSEFFE JEWELS</div>
         <div class="subtitle">ARGENTO & DESIGN</div>
-        <nav>
-            <a href="#collezione">Collezione</a>
-            <a href="#pagamenti">Pagamenti</a>
-            <a href="#contatti">Instagram</a>
+        
+        <!-- Menu Navigazione per Categorie -->
+        <nav class="category-nav">
+            <a href="#anelli">Anelli</a>
+            <a href="#collane">Collane</a>
+            <a href="#bracciali">Bracciali</a>
+            <a href="#orecchini">Orecchini</a>
         </nav>
     </header>
 
     <section class="hero">
         <h1>Esseffe Jewels</h1>
         <p>Gioielli in Argento & Design Artigianale</p>
-        <a href="#collezione" class="btn">Scopri i Gioielli</a>
+        <a href="#anelli" class="btn">Esplora la Collezione</a>
     </section>
 
-    <section id="collezione" class="products-section">
-        <h2>I Nostri Gioielli</h2>
-        <div class="product-grid">
-            
-            <!-- Prodotto 1 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Collana Argento">
-                <h3>Collana "Luce d'Argento"</h3>
-                <p class="price">€ 89,00</p>
-                <a href="https://instagram.com/Esseffe_jewels" target="_blank" class="buy-btn ig-btn">Ordina su Instagram</a>
+    <main class="products-container">
+
+        <!-- CATEGORIA: ANELLI -->
+        <section id="anelli" class="category-section">
+            <h2 class="category-title">💍 Anelli</h2>
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <div class="product-gallery">
+                        <img src="anello1-a.jpg" alt="Anello vista 1">
+                        <img src="anello1-b.jpg" alt="Anello vista 2">
+                    </div>
+                    <small class="gallery-hint">↔️ Scorri le foto</small>
+                    <h3>Anello Solitario Design</h3>
+                    <p class="price">€ 120,00</p>
+                    <div class="product-payments">
+                        <span>Pagamenti accettati:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aggiungi altri anelli qui coprendo il blocco sopra -->
+
             </div>
+        </section>
 
-            <!-- Prodotto 2 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" alt="Anello Design">
-                <h3>Anello Design Solitario</h3>
-                <p class="price">€ 120,00</p>
-                <a href="https://instagram.com/Esseffe_jewels" target="_blank" class="buy-btn ig-btn">Ordina su Instagram</a>
+        <!-- CATEGORIA: COLLANE -->
+        <section id="collane" class="category-section">
+            <h2 class="category-title">📿 Collane</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-gallery">
+                        <img src="collana1-a.jpg" alt="Collana vista 1">
+                        <img src="collana1-b.jpg" alt="Collana vista 2">
+                    </div>
+                    <small class="gallery-hint">↔️ Scorri le foto</small>
+                    <h3>Collana "Luce d'Argento"</h3>
+                    <p class="price">€ 89,00</p>
+                    <div class="product-payments">
+                        <span>Pagamenti accettati:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aggiungi altre collane qui -->
+
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- CATEGORIA: BRACCIALI -->
+        <section id="bracciali" class="category-section">
+            <h2 class="category-title">✨ Bracciali</h2>
+            <div class="product-grid">
 
-    <!-- Sezione Metodi di Pagamento -->
+                <div class="product-card">
+                    <div class="product-gallery">
+                        <img src="bracciale1-a.jpg" alt="Bracciale vista 1">
+                    </div>
+                    <h3>Bracciale Rigido Argento</h3>
+                    <p class="price">€ 95,00</p>
+                    <div class="product-payments">
+                        <span>Pagamenti accettati:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aggiungi altri bracciali qui -->
+
+            </div>
+        </section>
+
+        <!-- CATEGORIA: ORECCHINI -->
+        <section id="orecchini" class="category-section">
+            <h2 class="category-title">💎 Orecchini</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-gallery">
+                        <img src="orecchini1-a.jpg" alt="Orecchini vista 1">
+                    </div>
+                    <h3>Orecchini Punto Luce</h3>
+                    <p class="price">€ 65,00</p>
+                    <div class="product-payments">
+                        <span>Pagamenti accettati:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aggiungi altri orecchini qui -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Sezione Pagamenti -->
     <section id="pagamenti" class="payment-section">
         <h3>Metodi di Pagamento Accettati</h3>
         <p>Accettiamo pagamenti sicuri tramite:</p>
         <div class="payment-badges">
-            <span class="badge">PayPal</span>
-            <span class="badge">Carte di Credito / Debito</span>
-            <span class="badge">Bonifico Bancario</span>
-            <span class="badge">Ricarica Postepay</span>
+            <span class="badge"><i class="fab fa-paypal"></i> PayPal</span>
+            <span class="badge"><i class="far fa-credit-card"></i> Carte di Credito / Debito</span>
+            <span class="badge"><i class="fas fa-university"></i> Bonifico Bancario</span>
+            <span class="badge"><i class="fas fa-wallet"></i> Ricarica Postepay</span>
         </div>
     </section>
 
-    <!-- Footer / Contatti -->
+    <!-- Footer -->
     <footer id="contatti">
         <p><strong>Esseffe Jewels - Argento & Design</strong></p>
-        <p>Seguici e contattaci su Instagram per ordini e collezioni personalizzate:</p>
-        <p><a href="https://instagram.com/Esseffe_jewels" target="_blank" style="color: #d4af37; font-weight: bold; font-size: 16px; text-decoration: none;">@Esseffe_jewels</a></p>
+        <p>Per ordini o informazioni, contattaci su Instagram:</p>
+        <p><a href="https://instagram.com/Esseffe_jewels" target="_blank" style="color: #d4af37; font-weight: bold; font-size: 16px; text-decoration: none;"><i class="fab fa-instagram"></i> @Esseffe_jewels</a></p>
         <br>
         <p>&copy; 2026 Esseffe Jewels. Tutti i diritti riservati.</p>
     </footer>
