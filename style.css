@@ -1,57 +1,156 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esseffe Jewels - Argento & Design</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <header>
-        <!-- Foto del Logo caricata -->
-        <img src="IMG_2768.jpeg" alt="Esseffe Jewels Logo" class="logo-img">
-        <div class="logo-text">ESSEFFE JEWELS</div>
-        <div class="subtitle">ARGENTO & DESIGN</div>
-        <nav>
-            <a href="#collezione">Collezione</a>
-            <a href="#chi-siamo">Chi Siamo</a>
-        </nav>
-    </header>
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+    background-color: #121212;
+}
 
-    <section class="hero">
-        <h1>Esseffe Jewels</h1>
-        <p>Gioielli in Argento & Design Artigianale</p>
-        <a href="#collezione" class="btn">Scopri i Gioielli</a>
-    </section>
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #1a1a1a;
+    border-bottom: 2px solid #d4af37;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
 
-    <section id="collezione" class="products-section">
-        <h2>I Nostri Gioielli</h2>
-        <div class="product-grid">
-            
-            <!-- Prodotto 1 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Collana Argento">
-                <h3>Collana "Luce d'Argento"</h3>
-                <p class="price">€ 89,00</p>
-                <a href="https://wa.me/393331234567?text=Ciao!%20Vorrei%20ordinare%20la%20Collana%20Luce%20d'Argento" target="_blank" class="buy-btn">Ordina su WhatsApp</a>
-            </div>
+.logo-img {
+    max-width: 130px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #d4af37;
+}
 
-            <!-- Prodotto 2 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" alt="Anello Design">
-                <h3>Anello Design Solitario</h3>
-                <p class="price">€ 120,00</p>
-                <a href="https://wa.me/393331234567?text=Ciao!%20Vorrei%20ordinare%20l'Anello%20Design" target="_blank" class="buy-btn">Ordina su WhatsApp</a>
-            </div>
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #d4af37;
+    letter-spacing: 2px;
+    text-align: center;
+}
 
-        </div>
-    </section>
+.subtitle {
+    font-size: 11px;
+    color: #c0c0c0;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
 
-    <footer>
-        <p>&copy; 2026 Esseffe Jewels - Argento & Design</p>
-    </footer>
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
-</body>
-</html>
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80') center/cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #c0c0c0;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: linear-gradient(45deg, #d4af37, #f3e5ab);
+    color: #121212;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.products-section {
+    padding: 40px 15px;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #d4af37;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.product-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    margin: 15px 0 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #d4af37;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a0a0a;
+    color: #888;
+    font-size: 12px;
+    border-top: 1px solid #222;
+}
